@@ -1,5 +1,6 @@
 package com.vasylenko.stampscollector.domain;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -34,6 +35,7 @@ public class Property {
     @JoinColumn(name = "category_id")
     private Category category;
     private String name;
+    @Column(name = "description", columnDefinition = "TEXT")
     private String description;
     @ManyToMany(mappedBy = "properties")
     private List<Item> items;

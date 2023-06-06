@@ -44,17 +44,17 @@ public class Item implements Serializable {
     @Column(name = "item_name")
     private String name;
     @Column(name = "item_year")
-    private String year;
+    private Integer year;
     @Column(name = "item_date")
     private LocalDate printingDate;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "series_id")
     private Series series;
-    @Column(name = "series_no")
+    @Column(name = "catalog_no")
     private Integer editionNo;
-    @Column(name = "denomination")
+    @Column(name = "denomination", columnDefinition = "TEXT")
     private String denomination;
-    @Column(name = "image_link")
+    @Column(name = "image_link", columnDefinition = "TEXT")
     private String imagePath ;
     @Column(name = "circulation")
     private Integer circulation;
@@ -65,12 +65,12 @@ public class Item implements Serializable {
             name = "design",
             joinColumns = @JoinColumn(name = "item_id"),
             inverseJoinColumns = @JoinColumn(name = "author_id"))
-    private List<Author> design = new ArrayList<>();
+    private List<Author> authors = new ArrayList<>();
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinTable(
             name = "has_property",
             joinColumns = @JoinColumn(name = "item_id"),
             inverseJoinColumns = @JoinColumn(name = "property_id"))
-    private List<Property> property = new ArrayList<>();
+    private List<Property> properties = new ArrayList<>();
 
 }
