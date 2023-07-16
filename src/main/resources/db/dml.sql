@@ -1,0 +1,125 @@
+INSERT INTO category(name) VALUES ('type');
+INSERT INTO category(name) VALUES ('perforation');
+
+INSERT INTO properties(category_id, name, description) VALUES (1, 'commemorative', 'Commemorative Stamp');
+INSERT INTO properties(category_id, name, description) VALUES (1, 'sheet', 'Sheet Stamp');
+INSERT INTO properties(category_id, name, description) VALUES (1, 'definitive', 'Definitive Stamp');
+INSERT INTO properties(category_id, name, description) VALUES (1, 'personalized', 'Personalized Stamp');
+INSERT INTO properties(category_id, name, description) VALUES (1, 'FDC', 'A first day of issue cover');
+INSERT INTO properties(category_id, name, description) VALUES (1, 'postmark', 'A postal marking made on an envelope or postcard');
+
+INSERT INTO properties(category_id, name, description) VALUES (2, 'imperforated', 'Without perforation');
+INSERT INTO properties(category_id, name, description) VALUES (2, 'perf 7', 'Gauge: 7 dots per 20 mm');
+
+INSERT INTO series(series_name) VALUES ('Писанки');
+INSERT INTO series(series_name) VALUES ('Культурні епохи України');
+INSERT INTO series(series_name) VALUES ('Історії та міфи');
+INSERT INTO series(series_name) VALUES ('Герби міст, селищ та сіл України');
+INSERT INTO series(series_name) VALUES ('Її величність – Жінка');
+INSERT INTO series(series_name) VALUES ('Українська вишивка — код нації');
+INSERT INTO series(series_name) VALUES ('Краса і велич України');
+INSERT INTO series(series_name) VALUES ('Збройні формації Української революції 1917—1921 років');
+INSERT INTO series(series_name) VALUES ('Europa');
+INSERT INTO series(series_name) VALUES ('Садові квіти');
+INSERT INTO series(series_name) VALUES ('Національні меншини в Україні');
+INSERT INTO series(series_name) VALUES ('Українська абетка');
+INSERT INTO series(series_name) VALUES ('Червона книга України');
+INSERT INTO series(series_name) VALUES ('Національна військова техніка');
+INSERT INTO series(series_name) VALUES ('Кохання — це…');
+INSERT INTO series(series_name) VALUES ('Славетні роди України');
+INSERT INTO series(series_name) VALUES ('Веселих свят!');
+INSERT INTO series(series_name) VALUES ('Українські мультфільми');
+INSERT INTO series(series_name) VALUES ('Лікарські та медоносні рослини');
+INSERT INTO series(series_name) VALUES ('Лауреати Нобелівської премії');
+INSERT INTO series(series_name) VALUES ('Кохання — це життя!');
+INSERT INTO series(series_name) VALUES ('Захисники України');
+INSERT INTO series(series_name) VALUES ('Винаходи');
+INSERT INTO series(series_name) VALUES ('Заповідники та природні парки України');
+INSERT INTO series(series_name) VALUES ('Славетні жінки України');
+INSERT INTO series(series_name) VALUES ('Історія пожежного транспорту України');
+INSERT INTO series(series_name) VALUES ('Нагороди України');
+INSERT INTO series(series_name) VALUES ('Овочі');
+INSERT INTO series(series_name) VALUES ('Кримські татари — корінний народ Криму — України');
+INSERT INTO series(series_name) VALUES ('Свійські тварини');
+INSERT INTO series(series_name) VALUES ('Міський транспорт');
+INSERT INTO series(series_name) VALUES ('Національний ботанічний сад ім. М. М. Гришка НАН України');
+INSERT INTO series(series_name) VALUES ('Колекція сукулентних рослин та кактусів НБС ім. М. М. Гришка');
+INSERT INTO series(series_name) VALUES ('200-річчя від дня народження Тараса Шевченка');
+INSERT INTO series(series_name) VALUES ('Вагонобудування в Україні');
+INSERT INTO series(series_name) VALUES ('UEFA EURO 2012');
+INSERT INTO series(series_name) VALUES ('Казковий світ');
+INSERT INTO series(series_name) VALUES ('Локомотивобудування в Україні');
+INSERT INTO series(series_name) VALUES ('Виноробство в Україні');
+INSERT INTO series(series_name) VALUES ('Історія війська в Україні');
+INSERT INTO series(series_name) VALUES ('Українська пісня');
+INSERT INTO series(series_name) VALUES ('Знаки зодіаку');
+INSERT INTO series(series_name) VALUES ('Перлини мистецького спадку Тараса Шевченка');
+INSERT INTO series(series_name) VALUES ('Україна — космічна країна');
+INSERT INTO series(series_name) VALUES ('Київ очима художників');
+INSERT INTO series(series_name) VALUES ('Конструктори ракет');
+INSERT INTO series(series_name) VALUES ('Гетьмани України');
+INSERT INTO series(series_name) VALUES ('Суднобудування в Україні');
+INSERT INTO series(series_name) VALUES ('Дитячі малюнки');
+INSERT INTO series(series_name) VALUES ('Українські народні казки');
+INSERT INTO series(series_name) VALUES ('Ігри XXVII Олімпіади');
+INSERT INTO series(series_name) VALUES ('Церкви');
+INSERT INTO series(series_name) VALUES ('Літакобудування в Україні');
+INSERT INTO series(series_name) VALUES ('Народне мистецтво України');
+INSERT INTO series(series_name) VALUES ('Світочі української літератури');
+INSERT INTO series(series_name) VALUES ('Давні герби земель України');
+
+INSERT INTO authors(first_name, last_name) VALUES ('Олександр', 'Нікітюк');
+INSERT INTO authors(first_name, last_name) VALUES ('Бенксі', null);
+INSERT INTO authors(first_name, last_name) VALUES ('Сергій', 'Нужненко');
+INSERT INTO authors(first_name, last_name) VALUES ('Святослав', 'Романчак');
+INSERT INTO authors(first_name, last_name) VALUES ('Олександр', 'Охапкін');
+INSERT INTO authors(first_name, last_name) VALUES ('Марія', 'Суслова');
+INSERT INTO authors(first_name, last_name) VALUES ('Лінда', 'Бос');
+INSERT INTO authors(first_name, last_name) VALUES ('Руна', 'Егілсдоттір');
+INSERT INTO authors(first_name, last_name) VALUES ('Наталія', 'Андрійченко');
+INSERT INTO authors(first_name, last_name) VALUES ('Софія', 'Рябоконь');
+INSERT INTO authors(first_name, last_name) VALUES ('Олеся', 'Вакуленко');
+INSERT INTO authors(first_name, last_name) VALUES ('Наталія', 'Кохаль');
+INSERT INTO authors(first_name, last_name) VALUES ('Нато', 'Мікеладзе');
+INSERT INTO authors(first_name, last_name) VALUES ('Корнелія', 'Андрійчук');
+INSERT INTO authors(first_name, last_name) VALUES ('Марина', 'Куц');
+INSERT INTO authors(first_name, last_name) VALUES ('Оксана', 'Шуклінова');
+INSERT INTO authors(first_name, last_name) VALUES ('Василь', 'Василенко');
+INSERT INTO authors(first_name, last_name) VALUES ('Борис', 'Грох');
+INSERT INTO authors(first_name, last_name) VALUES ('Софія', 'Кравчук');
+INSERT INTO authors(first_name, last_name) VALUES ('Анастасія', 'Бондарець');
+INSERT INTO authors(first_name, last_name) VALUES ('Антон', 'Хрупін');
+INSERT INTO authors(first_name, last_name) VALUES ('Олександр', 'Харук');
+INSERT INTO authors(first_name, last_name) VALUES ('Сергій', 'Харук');
+INSERT INTO authors(first_name, last_name) VALUES ('Юрій', 'Шаповал');
+INSERT INTO authors(first_name, last_name) VALUES ('Микола', 'Кочубей');
+INSERT INTO authors(first_name, last_name) VALUES ('Андрій', 'Сагач');
+INSERT INTO authors(first_name, last_name) VALUES ('Валерія', 'Михайлова');
+INSERT INTO authors(first_name, last_name) VALUES ('Володимир', 'Таран');
+INSERT INTO authors(first_name, last_name) VALUES ('Олексій', 'Бондаренко');
+INSERT INTO authors(first_name, last_name) VALUES ('В.', 'Коршунов');
+INSERT INTO authors(first_name, last_name) VALUES ('Ольга', 'Симоненко');
+INSERT INTO authors(first_name, last_name) VALUES ('Олександр', 'Калмиков');
+INSERT INTO authors(first_name, last_name) VALUES ('Поліна', 'Дорошенко');
+INSERT INTO authors(first_name, last_name) VALUES ('Юліка', 'Правдохіна');
+INSERT INTO authors(first_name, last_name) VALUES ('Тетяна', 'Нестерова');
+INSERT INTO authors(first_name, last_name) VALUES ('Ярослав', 'Очендзана');
+INSERT INTO authors(first_name, last_name) VALUES ('Ірина', 'Медведовська');
+INSERT INTO authors(first_name, last_name) VALUES ('Валерій', 'Руденко');
+
+INSERT INTO items(catalog_no, item_name, item_year, item_date, series_id, denomination, image_link, circulation)
+VALUES (1974, 'Тризуб', 2022, '01/21/2022', null, 'V', '/images/Stamp_of_Ukraine_s1974.jpg', 300000);
+INSERT INTO items(catalog_no, item_name, item_year, item_date, series_id, denomination, image_link, circulation)
+VALUES (1977, 'Ясенець білий Dictamnus albus', 2022, '02/25/2022', 24, 'V', '/images/Stamp_of_Ukraine_s1977.jpg', 1466);
+INSERT INTO items(catalog_no, item_name, item_year, item_date, series_id, denomination, image_link, circulation)
+VALUES (1985, 'Русскій воєнний корабль, іді… !', 2022, '04/12/2022', null, 'W', '/images/Stamp_of_Ukraine_s1985.jpg', 500000);
+INSERT INTO items(catalog_no, item_name, item_year, item_date, series_id, denomination, image_link, circulation)
+VALUES (1991, 'ВІЛЬНІ. НЕЗЛАМНІ. НЕПЕРЕМОЖНІ', 2022, '08/24/2022', null, '60,00 гривень', '/images/Stamp_of_Ukraine_s1991.jpg', 1000000);
+INSERT INTO items(catalog_no, item_name, item_year, item_date, series_id, denomination, image_link, circulation)
+VALUES (2013, 'Лада. Богиня материнства', 2022, '11/22/2022', 3, 'A', '/images/Stamp_of_Ukraine_s2013.jpg', 180000);
+
+INSERT INTO design(item_id, author_id) VALUES (1, 16);
+INSERT INTO design(item_id, author_id) VALUES (2, 12);
+INSERT INTO design(item_id, author_id) VALUES (3, 18);
+INSERT INTO design(item_id, author_id) VALUES (4, 21);
+INSERT INTO design(item_id, author_id) VALUES (5, 25);
