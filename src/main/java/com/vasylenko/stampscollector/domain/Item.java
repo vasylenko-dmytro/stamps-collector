@@ -47,10 +47,10 @@ public class Item implements Serializable {
     private Integer year;
     @Column(name = "item_date")
     private LocalDate printingDate;
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "series_id")
     private Series series;
-    @Column(name = "catalog_no")
+    @Column(name = "catalog_no", unique = true)
     private Integer editionNo;
     @Column(name = "denomination", columnDefinition = "TEXT")
     private String denomination;

@@ -1,5 +1,6 @@
 package com.vasylenko.stampscollector.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -33,5 +34,6 @@ public class Author {
     @Column(name = "last_name")
     private String lastName;
     @ManyToMany(mappedBy = "authors")
+    @JsonIgnore
     private List<Item> items;
 }
